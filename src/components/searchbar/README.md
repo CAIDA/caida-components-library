@@ -1,17 +1,3 @@
-# caida-components-library
-
-> 
-
-[![NPM](https://img.shields.io/npm/v/caida-components-library.svg)](https://www.npmjs.com/package/caida-components-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
-## Install
-
-```bash
-npm install --save caida-components-library
-```
-
-## Usage
-
 # **Searchbar Component**
 
 This component renders an HTML `<input/>` searchbar with real-time search results displayed as user types. Allows user to click a search result, which can then trigger further interaction as defined by parent component.
@@ -24,6 +10,7 @@ This component renders an HTML `<input/>` searchbar with real-time search result
   itemPropertyName= Key in array of data for sorting and displaying search results provided as string (can provide nested values using ["key"] syntax).
   handleResultClick= Function for determining what happens when user clicks a search result.
   handleQueryUpdate= Resets searchbar after a selection is made.
+  searchTerm= (optional) current term that was searched for, for initial load, pull from props.history instead of state.
 ```
 
 Styles are overridable from local stylesheet.
@@ -105,8 +92,3 @@ export default class App extends Component {
   }
 }
 ```
-
-
-## License
-
-MIT © [](https://github.com/)
